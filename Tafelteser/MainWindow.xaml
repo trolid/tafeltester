@@ -1,0 +1,19 @@
+﻿<Window x:Class="RekenApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="RekenApp" Height="350" Width="500">
+    <Grid>
+        <Label Content="RekenApp - Oefen op 3F niveau" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,10,10,0"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
+            <Label Content="Voer je naam in:"/>
+            <TextBox x:Name="txtPlayerName"/>
+            <Label Content="Selecteer het niveau:"/>
+            <ComboBox x:Name="cmbNiveau">
+                <ComboBoxItem Content="Niveau 1"/>
+                <ComboBoxItem Content="Niveau 2"/>
+                <ComboBoxItem Content="Niveau 3"/>
+            </ComboBox>
+            <Button Content="Start" Click="StartButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
